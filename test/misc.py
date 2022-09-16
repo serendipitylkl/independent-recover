@@ -4,7 +4,8 @@ import sys
 import math
 import numpy as np
 import torchvision.transforms as transforms
-from datasets.pix2pix_val import pix2pix_val as commonDataset
+#from datasets.pix2pix_val import pix2pix_val as commonDataset
+from test.pix2pix_val import pix2pix_val as commonDataset
 
 def getLoader(dataroot, batchSize=64, shuffle=True):
     dataset = commonDataset(root=dataroot)
