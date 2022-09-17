@@ -2,6 +2,8 @@
 import math
 import torch
 import numpy as np
+import sys#自己添加的
+sys.path.append("../")#自己添加的
 from datasets.pix2pix import pix2pix as commonDataset
 
 def getLoader(dataroot, batchSize=64, shuffle=True):
